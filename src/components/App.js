@@ -1,5 +1,6 @@
 import React, { useReducer, useEffect } from "react";
 import "../App.css"
+import "../App.css"
 import Header from "./Header";
 import Movie from "./Movie";
 import spinner from "../assets/ajax-loader.gif";
@@ -63,11 +64,12 @@ const App = () => {
   return (
     <div className="App">
       <div className="m-container">
-        <Header text="HOOKED" />
+        <Header text="MovieArc" />
+        <center><h1>WELCOME TO THE LARGEST MOVIE DATABASE!</h1></center>
         <center>
         <Search search={search} />
-
-        <p className="App-intro"><strong>Favourites</strong></p>
+        <h2>OR</h2>
+        <p className="App-intro"><strong>Choose from Wasif Hussain's Favourites...</strong></p>
 
         <div className="movies">{retrievedMovies}</div>
         </center>
